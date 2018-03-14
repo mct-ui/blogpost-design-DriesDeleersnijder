@@ -12,27 +12,27 @@
 @font-face{
     font-family: "Droid Serif";
     font-weight: 400;
-    src: url("../fonts/DroidSerif-Regular-webfront.woff") format("woff");
+    src: url("../fonts/DroidSerif-Regular-webfont.woff") format("woff");
 
 }
 @font-face{
     font-family: "Droid Serif";
     font-weight: 400;
     font-style: italic;
-    src: url("../fonts/DroidSerif-Italic-webfront.woff") format("woff");
+    src: url("../fonts/DroidSerif-Italic-webfont.woff") format("woff");
 
 }
 @font-face{
     font-family: "Droid Serif";
     font-weight: 700;
-    src: url("../fonts/DroidSerif-Bold-webfront.woff") format("woff");
+    src: url("../fonts/DroidSerif-Bold-webfont.woff") format("woff");
 
 }
 @font-face{
     font-family: "Droid Serif";
     font-weight: 700;
     font-style: italic;
-    src: url("../fonts/DroidSerif-BoldItalic-webfront.woff") format("woff");
+    src: url("../fonts/DroidSerif-BoldItalic-webfont.woff") format("woff");
 
 }
 /*
@@ -47,7 +47,6 @@ html {
     /* font-family: "Inter UI","Helvetica Neue", Helvetica, arial, sans-serif; */
     font-family: "Droid Serif", Georgia, serif;
     color: #5C6366;
-    padding: 48px 24px 24px;
     -webkit-font-smoothing: antialised;
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
@@ -59,10 +58,6 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    max-width: 42em;
-    margin: 0 auto;
-}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -99,30 +94,6 @@ img {
     ---
     Default markup for typographic elements
 */
-@media (min-width: 576px) {}
-
-/* Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {
-
-    h1 {
-        font-size: 46px;
-        line-height: 56px;
-    }
-}
-@@media (min-width: 768px) {
-    .c-article__header {
-        padding: 48px 48px 24px;
-    }
-    .C-article__author {
-        padding-bottom: 24px;
-    }
-    .c-article__body {
-        padding: 24px 48px;
-    }
-}
-
-/* Large devices (landscape tablets, desktops, 992px and up) */
 
 @media (min-width: 992px) {
 
@@ -149,7 +120,8 @@ img {
 }
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
 /*
     Print styles.
@@ -190,6 +162,7 @@ img {
         box-shadow: none !important;
         text-shadow: none !important;
     }
+
     a,
     a:visited {
         text-decoration: underline;
@@ -309,11 +282,11 @@ blockquote * {
     line-height: inherit;
 }
 
-figcaption {
+/* figcaption {
     font-size: 12px;
     line-height: 16px;
     padding-top: 8px;
-}
+} */
 
 hr {
     border: 0;
@@ -358,6 +331,7 @@ a:focus {
 }
 .c-author_caption{
     padding-top: 0;
+
 }
 .c-author__meta,
 .c-author__name {
@@ -368,7 +342,7 @@ a:focus {
     font-size: 16px;
     line-height: 16px;
 }
-.c-article__header.
+.c-article__header,
 .c-article__body {
     max-width: 1200px;
     margin: 0 auto;
@@ -392,6 +366,31 @@ a:focus {
     ---
     Default markup for page level elements
 */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 46px;
+        line-height: 56px;
+    }
+}
+@media (min-width: 768px) {
+    .c-article__header {
+        padding: 48px 48px 24px;
+    }
+    .C-article__author {
+        padding-bottom: 24px;
+    }
+    .c-article__body {
+        padding: 24px 48px;
+    }
+}
+
+/* Large devices (landscape tablets, desktops, 992px and up) */
+
  .u-max-width-sm {
      max-width: 36em;
  }
