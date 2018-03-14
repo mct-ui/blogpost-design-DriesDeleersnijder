@@ -3,6 +3,11 @@
     font-weight: 400;
     src: url("../fonts/Inter-UI-Regular.woff2") format("woff2"),url("../fonts/Inter-UI-Regular.woff") format("woff");
 }
+@font-face{
+    font-family: "Inter UI";
+    font-weight: 700;
+    src: url("../fonts/Inter-UI-Bold.woff2") format("woff2"),url("../fonts/Inter-UI-Bold.woff") format("woff");
+}
 
 @font-face{
     font-family: "Droid Serif";
@@ -30,6 +35,43 @@
     src: url("../fonts/DroidSerif-BoldItalic-webfront.woff") format("woff");
 
 }
+/*
+    Components: Type
+    ---
+    Special typography classes
+*/
+.c-type-meta{
+    font-size: 14px;
+    font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
+    line-height: 16px;
+    margin-top: 4px;
+}
+
+.c-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.c-author__image{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    margin-right: 16px;
+}
+.c-author_caption{
+    padding-top: 0;
+}
+.c-author__meta,
+.c-author__name {
+    margin-bottom: 0;
+}
+
+.c-author__name {
+    font-size: 16px;
+    line-height: 16px;
+}
+.
 /*
     Elements: Page
     ---
@@ -161,7 +203,6 @@ figcaption {
     font-size: 12px;
     line-height: 16px;
     padding-top: 8px;
-    color: Grey;
 }
 
 hr {
